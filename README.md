@@ -20,6 +20,8 @@ The goal of this project is to classify movie reviews as positive or negative. V
 
 The dataset used in this project is a subset of the IMDB movie reviews dataset, which includes both positive and negative reviews. The data is cleaned, tokenized, lemmatized, and vectorized using methods like Bag of Words, TF-IDF, and Word2Vec.
 
+dataset: [IMDB Dataset of Movie Review](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
+
 ## Installation
 
 To run this project locally, follow these steps:
