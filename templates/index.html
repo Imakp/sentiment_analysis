@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Sentiment Analysis</h1>
+        <form method="POST">
+            <textarea name="review" placeholder="Enter your review here..."></textarea>
+            <button type="submit">Analyze Sentiment</button>
+        </form>
+        
+        {% if review %}
+        <div class="results">
+            <h2>Review:</h2>
+            <p>{{ review }}</p>
+            <h2>Sentiments:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Sentiment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for model, sentiment in sentiments.items() %}
+                    <tr>
+                        <td>{{ model }}</td>
+                        <td>{{ sentiment }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
