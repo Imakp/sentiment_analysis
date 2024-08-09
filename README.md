@@ -56,6 +56,7 @@ To run this project locally, follow these steps:
 
 The project is organized as follows:
 
+```
 sentiment_analysis/
 │
 ├── saved_models/           # Directory containing the trained machine learning models
@@ -65,6 +66,7 @@ sentiment_analysis/
 ├── app.py                  # Flask application script for web interface
 ├── templates/              # Directory containing HTML templates for the web app
 └── static/                 # Directory containing static files like CSS for the web app
+```
 
 ## Models Used
 
